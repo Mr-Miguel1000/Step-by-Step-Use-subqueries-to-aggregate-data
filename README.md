@@ -58,6 +58,7 @@ HAVING
 
 ---Revision_2
   --- (added 6th column - Re-added column with grand total of orders fulfilled. Options: 0–20%, 21–60%, or > 60%.)
+  --- (added ORDER BY order_percentage DESC)
 SELECT
   Warehouse.warehouse_id,
   CONCAT(Warehouse.state, ': ', Warehouse.warehouse_alias) AS warehouse_name,
